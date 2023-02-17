@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-light ">
+                    <div class="card-header">
+                        <h2>Payment form example</h2>
+                    </div>
+                    <form id="myForm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-danger d-flex flex-grow" role="alert">Some fields are
+                                        missing! </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>Card #</label>
+                                        <input class="form-control" type="text" id="fcard" name="fcard"
+                                            placeholder="xxxxxxxxxxxxxxx">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>CVC #</label>
+                                        <input class="form-control"  placeholder="0000">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Amount</label>
+                                        <input class="form-control"  placeholder="amount">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input class="form-control"
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <select class="form-control">
+                                            <option value="">Pick a State</option>
+                                            <option value="1">España</option>
+                                            <option value="2">Francia</option>
+                                            <option value="3">Portugal</option>
+                                            <option value="4">Inglaterra</option>
+                                            <option value="5">Dubai</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Postal Code</label>
+                                        <input class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>We accept:</label><br><br>
+                                        
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input">
+                                            <label class="custom-control-label"></label>
+                                            <i class="fa fa-2x fa-cc-mastercard"></i>
+                                        </div>
+
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio class="custom-control-input">
+                                            <label class="custom-control-label" ></label>
+                                            <i class="fa fa-2x fa-cc-visa"></i>
+                                        </div>
+                                        
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label"></label>
+                                            <i class="fa fa-2x fa-cc-diners-club"></i>
+                                        </div>
+
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label"></label>
+                                            <i class="fa fa-2x fa-cc-amex"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="comment">Message</label>
+                                        <textarea class="form-control"></textarea>
+                                        <small>Add any notes here.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer justify-content-end">
+                           
+                            <button type="button" class="btn btn-secondary float-right">Cancel</button>
+                            <button type="submit" class="btn btn-primary float-right">Send</button>
+                   
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="validator.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
